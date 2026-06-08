@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+        EduMarket
+    </div>
+
+    <ul>
+
+        <li>
+            <i class="fas fa-home"></i>
+            Dashboard
+        </li>
+
+        <li>
+            <i class="fas fa-book"></i>
+            Courses
+        </li>
+
+        <li>
+            <i class="fas fa-graduation-cap"></i>
+            My Courses
+        </li>
+
+        <li>
+            <i class="fas fa-user"></i>
+            Profile
+        </li>
+
+        <li id="logoutBtn">
+            <i class="fas fa-sign-out-alt"></i>
+            Logout
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="main-content">
+
+    <div class="top-bar">
+
+        <h1>
+            Welcome,
+            <span id="studentName"></span>
+        </h1>
+
+        <button id="coursesBtn">
+            Browse Courses
+        </button>
+
+    </div>
+
+    <div class="stats">
+
+        <div class="stat-card">
+            <h2>12</h2>
+            <p>Total Courses</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>4</h2>
+            <p>Enrolled</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>2</h2>
+            <p>Certificates</p>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">
+        Featured Courses
+    </h2>
+
+    <div class="course-grid">
+
+        <div class="course-card">
+
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600">
+
+            <h3>Full Stack Web Development</h3>
+
+            <p>
+                Learn HTML, CSS, JavaScript,
+                React and Node.js
+            </p>
+
+            <button>
+                Enroll Now
+            </button>
+
+        </div>
+
+        <div class="course-card">
+
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600">
+
+            <h3>Java Programming</h3>
+
+            <p>
+                Master Java from beginner
+                to advanced.
+            </p>
+
+            <button>
+                Enroll Now
+            </button>
+
+        </div>
+
+        <div class="course-card">
+
+            <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=600">
+
+            <h3>Data Science</h3>
+
+            <p>
+                Python, Machine Learning
+                and Analytics.
+            </p>
+
+            <button>
+                Enroll Now
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="./js/dashboard.js"></script>
+
+</body>
+</html>

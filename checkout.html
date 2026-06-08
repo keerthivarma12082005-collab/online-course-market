@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout</title>
+
+<link rel="stylesheet" href="checkout.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="checkout-form">
+
+        <h1>Checkout</h1>
+
+        <input
+        type="text"
+        id="name"
+        placeholder="Full Name">
+
+        <input
+        type="email"
+        id="email"
+        placeholder="Email Address">
+
+        <input
+        type="text"
+        id="phone"
+        placeholder="Phone Number">
+
+        <textarea
+        id="address"
+        placeholder="Address"></textarea>
+
+        <select id="paymentMethod">
+
+            <option>
+                Select Payment Method
+            </option>
+
+            <option>
+                Credit Card
+            </option>
+
+            <option>
+                Debit Card
+            </option>
+
+            <option>
+                UPI
+            </option>
+
+            <option>
+                Net Banking
+            </option>
+
+        </select>
+
+    </div>
+
+    <div class="order-summary">
+
+        <h2>Order Summary</h2>
+
+        <div class="course">
+
+            <p>Web Development</p>
+
+            <span>₹999</span>
+
+        </div>
+
+        <div class="course">
+
+            <p>Java Programming</p>
+
+            <span>₹799</span>
+
+        </div>
+
+        <hr>
+
+        <h3>Total : ₹1798</h3>
+
+        <button id="placeOrderBtn">
+            Place Order
+        </button>
+
+    </div>
+
+</div>
+
+<script src="checkout.js"></script>
+
+</body>
+</html>

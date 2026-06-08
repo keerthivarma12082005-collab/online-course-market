@@ -1,0 +1,102 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f7fc;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+}
+
+.profile-container{
+max-width:1000px;
+width:100%;
+}
+
+.profile-card{
+background:white;
+padding:40px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+margin-bottom:30px;
+}
+
+.profile-img{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:20px;
+border:5px solid #2563eb;
+}
+
+.profile-card h1{
+margin-bottom:10px;
+}
+
+.profile-card p{
+color:#666;
+margin-bottom:20px;
+}
+
+#editBtn{
+padding:12px 25px;
+border:none;
+background:#2563eb;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+.stats-container{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-bottom:30px;
+}
+
+.stat-card{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.stat-card i{
+font-size:40px;
+color:#2563eb;
+margin-bottom:15px;
+}
+
+.actions{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.actions button{
+padding:14px 30px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+color:white;
+font-size:16px;
+}
+
+#myCoursesBtn{
+background:#10b981;
+}
+
+#logoutBtn{
+background:#ef4444;
+}

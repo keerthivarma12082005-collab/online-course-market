@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart</title>
+
+<link rel="stylesheet" href="cart.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>My Cart</h1>
+
+    <div id="cartItems">
+
+        <div class="cart-card">
+
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500">
+
+            <div class="details">
+
+                <h3>Full Stack Web Development</h3>
+
+                <p>Instructor: John Anderson</p>
+
+                <h4>₹999</h4>
+
+            </div>
+
+            <button class="removeBtn">
+                Remove
+            </button>
+
+        </div>
+
+        <div class="cart-card">
+
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500">
+
+            <div class="details">
+
+                <h3>Java Programming</h3>
+
+                <p>Instructor: David Smith</p>
+
+                <h4>₹799</h4>
+
+            </div>
+
+            <button class="removeBtn">
+                Remove
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="summary">
+
+        <h2>
+            Total :
+            <span id="totalPrice">
+                ₹1798
+            </span>
+        </h2>
+
+        <button id="checkoutBtn">
+            Proceed To Checkout
+        </button>
+
+    </div>
+
+</div>
+
+<script src="cart.js"></script>
+
+</body>
+</html>

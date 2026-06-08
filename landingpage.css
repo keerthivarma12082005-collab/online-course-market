@@ -1,0 +1,160 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f8fafc;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#2563eb;
+color:white;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+background:
+linear-gradient(
+rgba(0,0,0,.5),
+rgba(0,0,0,.5)
+),
+
+url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200");
+
+background-size:cover;
+background-position:center;
+
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+#browseBtn{
+padding:15px 35px;
+border:none;
+border-radius:50px;
+background:white;
+color:#2563eb;
+font-size:18px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.features{
+padding:80px 50px;
+text-align:center;
+}
+
+.features h2{
+margin-bottom:40px;
+}
+
+.feature-container{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.feature-card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.feature-card i{
+font-size:40px;
+color:#2563eb;
+margin-bottom:15px;
+}
+
+.popular{
+padding:80px 50px;
+}
+
+.popular h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+.course-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.course-card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.course-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.course-card h3,
+.course-card p{
+padding:15px;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#0f172a;
+color:white;
+}
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:15px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+}
